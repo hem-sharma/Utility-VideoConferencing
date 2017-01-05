@@ -22,9 +22,8 @@ var config = {
 
 var argv = minimist(process.argv.slice(2), {
     default: {
-        as_uri: 'https://localhost:8443/',
-        // ws_uri: 'ws://192.168.0.9:8888/kurento' //using VM KMS 
-        ws_uri: 'ws://52.187.34.155:8888/kurento' //using VM KMS 
+        as_uri: 'https://localhost:443/',
+        ws_uri: 'wss://kms.kazastream.com:8443/kurento' //using production KMS 
     }
 });
 
