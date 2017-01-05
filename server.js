@@ -30,8 +30,9 @@ var argv = minimist(process.argv.slice(2), {
 
 var options =
 	{
-		key: fs.readFileSync('keys/server.key'),
-		cert: fs.readFileSync('keys/server.crt')
+		key: fs.readFileSync('keys/kazap2p.key'),
+		cert: fs.readFileSync('keys/5db5e24c5e912b1d.crt'),
+		ca: [fs.readFileSync('keys/1.crt'),fs.readFileSync('keys/2.crt'),fs.readFileSync('keys/3.crt')]
 	};
 
 var app = express();
